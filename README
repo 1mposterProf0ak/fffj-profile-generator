@@ -1,0 +1,21 @@
+# Firefox Firejail Profile Generator
+
+## Overview
+
+Firejail outlines some best practices for sandboxing web browsers, in particular the recommendation to create profiles for different use cases (social media browsing, e-commerce, banking, work, etc.) with commensurate sandboxing for each use case. 
+
+There are known peculiarities with Firefox sandboxing that require certain tweaks, e.g. enabling certain addons or the use of hardware authentication tokens.
+
+
+## TODO
+
+- [ ] local Firefox profile generation:
+	- [ ] naming convention should be firefox.PROFILENAME.local
+	- [ ] prompt the user for:
+		- [ ] if user wants to import global firefox profile
+		- [ ] if user plans to use certain extensions:
+			- [ ] keepassxc:
+				- [ ] ask user if they also want to make a firejail profile for keepassxc
+	- [ ] when finished, also create a firefox profile of the same name if it doesn't already exist:
+		- [ ] set certain hardened defaults:
+			- [ ] 
